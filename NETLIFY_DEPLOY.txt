@@ -1,0 +1,12 @@
+NIKHA INVITATION — NETLIFY DEPLOYMENT
+
+1. Extract this ZIP.
+2. Upload the contents of the Nikha_Invitation_Netlify_Mobile_Fixed folder to the ROOT of your GitHub repository (index.html should be at repository root).
+3. Commit and push all files, including _headers, style.css, script.js and assets/nikha-invitation-original.pdf.
+4. In Netlify, publish directory is . and build command is blank.
+5. If Netlify dashboard or another platform has a custom Content-Security-Policy header configured, remove/disable that older policy so it does not conflict with _headers. Multiple CSP policies are enforced together and the stricter policy still blocks scripts.
+6. Test on the deployed URL, not by opening index.html as file://.
+
+This version uses PDF.js canvas rendering for preview, including mobile browsers where PDF-in-iframe preview may not work. The original three-page PDF is retained; names are added to page 1 only. PDF libraries load from jsDelivr, so internet access is required.
+
+If deploy is via GitHub, add/commit/push the files and wait for Netlify redeploy to finish. Then hard-refresh the page or clear its cache.
